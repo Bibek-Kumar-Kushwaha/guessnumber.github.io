@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExtermHard_Level</title>
+    <script src="extermhard.js"></script>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <header class="head">
+        <h2>Exterm Hard Level</h2>
+        <h3>Choose The Number Between 1 to 10000</h3>
+    </header>
+    <article>
+        <div class="input">
+          <input type="number" placeholder="Guess One Number" id="userInput"/>
+        </div>
+  
+          <div class="button">
+          <button id="check" onchange="check()" onclick="check()">CHECK</button>
+          <button id="Start" onchange="start()" onclick="start()">RESTART</button>
+          </div>
+  
+          <div class="message">
+          <h5 id="message"></h5>
+          <h5 id="countmessage"></h5>
+          <div id="image"></div>
+          </div>
+          <div class="image">
+            <img id="happyphoto" src="happy.jpg" alt="Happy">  
+            <img id="sadphoto" src="sad.jpg" alt="">  
+          </div>
+          <pre>
+            <strong> GAME RULES:</strong>
+        i)  First up all choose level.
+       ii)  If you want to restart the game then click on restart button.
+       iv)  After click on Restart button Input your number in the Box.
+        v)  Then click on check button again and again until you won the game.
+       </pre>
+      </article>
+</body>
+</html>
