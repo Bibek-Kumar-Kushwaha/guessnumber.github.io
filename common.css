@@ -1,8 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f9ffdf;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,14 +16,17 @@ a{
     font-size: 1.3em;
     color: blue;
     font-weight: bolder;
+    margin: 10px;
     padding:10px;
 }
-.head {
+.head{
+    display: block;
     text-align: center;
     background: rgba(0, 132, 255, 0.8);
     color: white;
     font-size: 1.3em;
-    width: 100%;
+    width: 100vw;
+    height:  auto;
 }
 nav{
     padding: 15px;
@@ -36,7 +42,7 @@ a:hover{
 }
 
 .article {
-    width: 100%;
+    width: 100vw;
     padding: 20px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.8);
@@ -116,25 +122,26 @@ a:hover{
     display: none;
 }
 
-pre {
+p{
+    display: inline-block;
     border-radius: 15px;
-    padding: 10px;
+    padding: 5px;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-pre strong {
+p strong{
     font-weight: bold;
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .article {
         padding: 10px;
     }
 
     .input input, .button button {
-        width: 100%;
+        width: 100vw;
     }
 }
 
@@ -161,7 +168,7 @@ pre strong {
         height: 150px;
     }
 
-    pre {
-        padding: 5px;
+    p {
+        padding:15px;
     }
 }
